@@ -1,0 +1,37 @@
+.button
+	background-color: $accent
+	border-radius: 2px
+	padding: 14px 66px
+	border: none
+	outline: none
+	cursor: pointer
+	font-size: 20px
+	font-weight: 700
+	color: #fff
+	text-decoration: none
+	transition: .3s all
+	margin: 0 15px
+	&:focus, &:hover
+		text-decoration: none
+		color: #fff
+	&:hover
+		background-color: lighten($accent, 5%)
+	&:active
+		background-color: darken($accent, 5%)
+	&_gray
+		padding: 14px 54px
+		background-color: $gray
+		&:hover
+			background-color: lighten($gray, 5%)
+		&:active
+			background-color: darken($gray, 5%)
+	&_form
+		width: 100%
+		padding: 14.5px
+		font-size: 17px
+		margin: 0
+	&__wrap
+		grid-column: 1 / 5
+		padding: $gutter $gutter 50px
+		text-align: center
+	

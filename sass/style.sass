@@ -1,0 +1,53 @@
+@import 'base/fonts'
+@import 'base/vars'
+
+*
+	box-sizing: border-box
+	&:before, &:after
+		box-sizing: border-box
+body
+	position: relative
+	min-width: 320px
+	font-family: raleway-grid, sans-serif
+	font-size: 16px
+	font-weight: 400
+	line-height: 1.75
+	overflow-x: hidden
+	opacity: 1
+	color: #333
+	margin: 0
+	padding: 0
+h1, h2, h3, h4, h5, h6, p 
+	margin: 0
+textarea
+	resize: none
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+.text-center
+	text-align: center
+.grid
+	display: grid
+.container
+    max-width: 1200px
+    margin: 0 auto
+    padding: 0 $gutter
+.section
+    padding: 90px 0
+    &__title
+        color: $overlay
+        font-size: 34px
+        font-weight: 700
+    .container
+        grid-template-columns: 1fr 1fr
+
+@import 'blocks/header'
+@import 'blocks/portfolio'
+@import 'blocks/ready'
+@import 'blocks/form'
+@import 'blocks/blog'
+@import 'blocks/footer'
+@import 'blocks/buttons'
+
+@import 'base/media'

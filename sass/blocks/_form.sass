@@ -1,0 +1,21 @@
+.form-section
+    min-height: 100px
+    background-color: $overlay
+    padding: 25px 0
+.form
+    grid-template-columns: repeat(4, 1fr)
+    grid-gap: $gutter
+    &__input
+        width: 100%
+        padding: 15px 20px
+        background-color: #314853
+        color: #556c77
+        font-family: Arial, sans-serif
+        font-style: italic
+        border: none
+        outline: none
+        transition: background-color .3s ease
+        &::placeholder
+            color: #556c77
+        &:focus
+            background-color: $light
